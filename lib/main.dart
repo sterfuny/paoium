@@ -14,20 +14,20 @@ class MainApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue),
       ),
-      home: HostFold()
+      home: HostScaff()
     );
   }
 }
 
-class HostFold extends StatelessWidget {
-  const HostFold({super.key});
+class HostScaff extends StatelessWidget {
+  const HostScaff({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text("HostFold"),
+        title: Text("HostScaff"),
       ),
       
       body: ScaleGesturelayout(),
