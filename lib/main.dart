@@ -29,6 +29,7 @@ class HostFold extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text("HostFold"),
       ),
+      
       body: ScaleGesturelayout(),
     );
   }

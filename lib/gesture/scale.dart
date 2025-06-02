@@ -13,10 +13,11 @@ class _ScaleGesturelayoutState extends State<ScaleGesturelayout> {
     return GestureDetector(
       onScaleUpdate: (ScaleUpdateDetails details) {
         setState(() {
-          print("update");
-          _scaleFactor = 1.0;
-          _scaleFactor *= details.scale;
-        });
+        _scaleFactor = 1.0;
+        _scaleFactor = details.scale;});
+      },
+      onScaleEnd: (details){
+        setState(() {_scaleFactor = 1.0;});
       },
       child: Container(
         color: Colors.blue[50],
@@ -24,8 +25,8 @@ class _ScaleGesturelayoutState extends State<ScaleGesturelayout> {
         height: double.infinity,
         
         child: Text(
-          "ScaleFactor: $_scaleFactor",
-          style: TextStyle(fontSize: _scaleFactor*20.0),
+          "ScaleFactor:\n$_scaleFactor",
+          style: TextStyle(fontSize: _scaleFactor*15.0),
         ),
       ),
     );
