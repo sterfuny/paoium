@@ -18,7 +18,7 @@ final List<Widget> widgetline = [
     body: Center(child: Text("Scaffold2")),
   ),
   Scaffold(
-    appBar: AppBar(backgroundColor: Colors.lightBlue, title: Text("Scaffold3")),
+    appBar: AppBar(backgroundColor: Colors.amber, title: Text("Scaffold3")),
     body: Center(child: Text("Scaffold3")),
   ),
 ];
